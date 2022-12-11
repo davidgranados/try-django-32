@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="My First Template" />
+    <meta name="keywords" content="Template" />
+    <title>My First Template</title>
+  </head>
+  <body>
+    <h1>Hello World</h1>
+    <form action='{% url 'article-search' %}' method='get'>
+      <input type='text' name='q' />
+      <input type='submit' />
+    </form>
+    {% block content %}
+      <h3>This will be replaced</h3>
+    {% endblock content %}
+  </body>
+</html>
