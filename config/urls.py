@@ -11,7 +11,7 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path("articles/", article_search_view, name="article-search"),
     path("articles/create", article_create_view, name="article-create"),
-    path("articles/<int:id>/", article_detail_view, name="article-detail"),
+    path("articles/<slug:slug>/", article_detail_view, name="article-detail"),
     path("login/", login_view, name="login"),
     path("logout/", logout_view, name="logout"),
     path("register/", register_view, name="register"),
