@@ -4,6 +4,8 @@ django-dotenv==1.4.2
 gunicorn==21.2.0
 psycopg2-binary==2.9.7
 
+django-htmx==1.17.0
+
 pint==0.22
 
 black==23.7.0

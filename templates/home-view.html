@@ -2,7 +2,7 @@
 {% block content %}
   <h1>{{ object.title }} (id: {{ id }})!</h1>
   <p>{{ content }}!</p>
-  <a href='{% url "article-create" %}'>Create Article</a>
+  <a href='{% url "articles:create" %}'>Create Article</a>
   <ul>
     {% for article in object_list %}
       {% if article.title %}
